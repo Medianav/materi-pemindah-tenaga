@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class=""><head><script>window.livecodes = window.livecodes || {};</script><title>Materi Pemindah Tenaga XI-TKR</title><meta name="title" content="Materi Pemindah Tenaga XI-TKR"><meta charset="UTF-8">
+<html lang="en" class=""><head><script>window.livecodes = window.livecodes || {};</script><title>Sistem Pemindah Tenaga XI-TKR</title><meta name="title" content="Sistem Pemindah Tenaga XI-TKR"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css"><script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js" async=""></script><script type="importmap">{
   "imports": {}
 }</script></head><body>
 
 
+    <script>window.livecodes = window.livecodes || {};</script>
+    <title>Materi Pemindah Tenaga XI-TKR</title>
+    <meta name="title" content="Materi Pemindah Tenaga XI-TKR">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Pemindah Tenaga (Power Train System) - XI-TKR</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js" async=""></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -37,6 +42,11 @@
         }
     </script>
     <style>
+        body {
+            background-color: #12141d !important;
+            color: #f8f9fa;
+        }
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -324,8 +334,8 @@
                 <input type="password" id="input-access-pin" maxlength="6" placeholder="Masukkan PIN Akses..." class="w-full text-center text-2xl font-tech tracking-widest bg-slate-900 border border-slate-700 rounded-xl py-3 text-white focus:outline-none focus:border-brand-orange">
                 <p id="access-pin-error-msg" class="text-xs text-red-400 hidden font-semibold">PIN Pembuka Akses Salah! Hubungi Guru Anda.</p>
                 <div class="text-[11px] text-slate-400 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800 text-left space-y-1">
-                    <p class="text-slate-200 font-bold"><i class="fa-solid fa-circle-info text-brand-orange mr-1"></i> Petunjuk Guru:</p>
-                    <p>* Default PIN Akses: <span class="text-brand-orange font-mono font-bold">****</span> atau <span class="text-brand-orange font-mono font-bold">****</span></p>
+                    <p class="text-slate-200 font-bold"><i class="fa-solid fa-circle-info text-brand-orange mr-1"></i> Informasi Akses:</p>
+                    <p class="text-slate-300">* PIN Akses Kuis diberikan oleh Guru Pengawas setelah materi selesai dipelajari.</p>
                 </div>
             </div>
 
@@ -354,8 +364,9 @@
             <div class="space-y-3">
                 <input type="password" id="input-teacher-pin" maxlength="6" placeholder="Masukkan PIN Token..." class="w-full text-center text-2xl font-tech tracking-widest bg-slate-900 border border-slate-700 rounded-xl py-3 text-white focus:outline-none focus:border-brand-orange">
                 <p id="pin-error-msg" class="text-xs text-red-400 hidden font-semibold">PIN Token Salah! Silakan hubungi Guru Pengawas.</p>
-                <div class="text-[11px] text-slate-500 bg-slate-900/60 p-2 rounded-lg border border-slate-800">
-                    *Default Token Guru: <span class="text-slate-300 font-mono font-bold">****</span> / <span class="text-slate-300 font-mono font-bold">****</span>
+                <div class="text-[11px] text-slate-400 bg-slate-900/60 p-2 rounded-lg border border-slate-800 text-left">
+                    <p class="text-slate-200 font-bold mb-0.5"><i class="fa-solid fa-user-shield text-brand-orange mr-1"></i> Pengawasan Ujian XI-TKR:</p>
+                    <p class="text-slate-300">* Hanya Guru/Pengawas yang berwenang memasukkan Token untuk membuka kunci.</p>
                 </div>
             </div>
 
@@ -384,7 +395,7 @@
     </div>
 
     <!-- OVERLAY LOCKSCREEN UNTUK KEMBALI FULLSCREEN KUIS -->
-    <div id="modal-fullscreen-lock" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-lg flex items-center justify-center p-4 hidden">
+    <div id="modal-fullscreen-lock" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-lg flex items-center justify-center p-4 hidden">
         <div class="bg-brand-card border border-red-800/80 rounded-2xl p-6 sm:p-8 max-w-lg w-full space-y-6 shadow-2xl text-center">
             <div class="w-20 h-20 rounded-full bg-red-950/80 border-2 border-brand-red text-brand-orange flex items-center justify-center mx-auto text-3xl shadow-lg shadow-brand-red/20 animate-pulse">
                 <i class="fa-solid fa-expand"></i>
@@ -477,8 +488,7 @@
                 realImgs: [
                     "https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2021/06/15054111/Automatic-Transmission-Types-Pros-and-Cons-body150620211033-1024x640.jpg",
                     "https://en.engear.tv/wp-content/uploads/2024/08/torque-converter.jpg.webp",
-                    "https://cdn.hswstatic.com/gif/transmission-new.jpg",
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVixKR7EENN_EDlUIjGeGWkuvAxZZUhn3P0LuoKZICjB2zsTh-xCRGWg&s=10"
+                    "https://cdn.hswstatic.com/gif/transmission-new.jpg"
                 ],
                 pengertian: "Unit pemindah daya otomatis yang terdiri dari Pengubah Torsi Hidrolik (Torque Converter), Rangkaian Roda Gigi Planetari (Planetary Gear Set), serta Katup Pengontrol Hidrolik/Elektronik (Valve Body & TCU).",
                 fungsi: "Mengatur perpindahan perbandingan rasio gigi secara otomatis berdasarkan beban kecepatan dan injakan pedal gas tanpa memerlukan pedal kopling manual.",
@@ -498,7 +508,6 @@
                 iconClass: "fa-solid fa-arrows-up-to-line",
                 realImgs: [
                     "https://dsoodysseusstprod.blob.core.windows.net/strapi-media/assets/sys_master_media_h55_h03_8812382224414_1200px_Drive_shaft_7ba611efe5.jpg",
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOFK6f0qtwTmrOl4eBgy8DXWXImTEaEyyZWLJMfH-LtJfvWnEG7Y_lSAu&s=10",
                     "https://www3.wuling.id/wp-content/uploads/2023/01/Fungsi-Propeller-Shaft-Jenis-Jenis-dan-Cara-Kerjanya_4-1000x569.jpg"
                 ],
                 pengertian: "Batang poros baja berongga (hollow shaft) yang dilengkapi Universal Joint (Engsel Salib / Cardan Joint), Slip Joint, dan Center Bearing pada tipe 2-piece.",
@@ -519,8 +528,7 @@
                 iconClass: "fa-solid fa-circle-nodes",
                 realImgs: [
                     "https://upload.wikimedia.org/wikipedia/commons/a/ad/BAUMA_2004_ZF_Differentialgetriebe.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
-                    "https://www.drivingline.com/s3/drivingline.prd/media/rnkipfvz/001-differential-regearing-is-it-worth-it.jpg?quality=70&mode=pad&copymetadata=true&w=800",
-                    "https://heavydutyjournal.com/wp-content/uploads/2026/04/heavy-duty-truck-differential-inspection.webp"
+                    "https://www.drivingline.com/s3/drivingline.prd/media/rnkipfvz/001-differential-regearing-is-it-worth-it.jpg?quality=70&mode=pad&copymetadata=true&w=800"
                 ],
                 pengertian: "Rangkaian roda gigi pemreduksi akhir (Drive Pinion & Ring Gear) serta roda gigi pembeda (Differential Case, Spider Gear/Pinion Gear, dan Side Gear).",
                 fungsi: "Mengubah arah putaran poros sebesar 90 derajat, mereduksi kecepatan untuk meningkatkan torsi akhir, dan membedakan kecepatan putar roda kiri dan kanan saat kendaraan berbelok.",
@@ -540,8 +548,7 @@
                 iconClass: "fa-solid fa-dharmachakra",
                 realImgs: [
                     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkK60mGF_17tjx_xtwRHfZ9qRWZ7x9l91OLUNYtE0fV2agALfXLnwqr3aIPc3sbHTncPN0Z4uVqGQzElReIYb_kxVrZeAli-YVZEWhsq9r_2ZUJ26qkAWuDyKvUFb0uzJlGK5m4h3VTxhW1UaOwShrV4HMx7Zt_wBsCVmS0QLtsiEonmdcusucTcXfciw/s1600/1000156932.jpg",
-                    "https://www.rsxracingsolutions.com/cdn/shop/files/210600263_210600264FrontkitofDriveshaftsforMMCLancerEVO4-9_30bf3834-59d6-448f-97d2-eb6153b15056.jpg?v=1767007668&width=1946",
-                    "https://asset.kompas.com/crops/8vyAIabJ1PIWOkvB0CF5LrB_bxA=/69x0:932x575/1200x800/data/photo/2026/02/01/697e8063c679a.png"
+                    "https://www.rsxracingsolutions.com/cdn/shop/files/210600263_210600264FrontkitofDriveshaftsforMMCLancerEVO4-9_30bf3834-59d6-448f-97d2-eb6153b15056.jpg?v=1767007668&width=1946"
                 ],
                 pengertian: "Poros baja pejal penyalur daya akhir dari side gear gardan menuju hub roda. Terdiri dari tipe Rigid Axle Shaft (Rear Axle) dan Independent Drive Shaft (dilengkapi Birfield/Tulip CV Joint).",
                 fungsi: "Meneruskan pemutaran dari differensial langsung ke roda serta menopang beban bodi kendaraan (pada tipe aksel pemikul beban).",
@@ -561,10 +568,7 @@
                 iconClass: "fa-solid fa-car",
                 realImgs: [
                     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR8qWDUlThljqAd3IsFK5oizzxmffrP6Nblj5IGAxmOgKrHNgFHpBkS8Tpj_7AhbGY5SXSYpJjDvJHK9a6HpPrn9nhEXG1SNTpLBkLSkUEQdITWCrfSW70H_W3sOLmjVS-y3UQjGwsK6r43Ju345PT_bCv0U7qOucvJSJRfRlG5xbj5z20XwX2h-p3vHo/s1672/1000156948.jpg",
-                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNexl71vi4jMR1wn5KHRwcr2EkIKd180RNXpvj-iGbBQFlsVtuFkkGwUp5ctXwXTX9pHJQ1F2cJi0jwSGTGmTHt_U3Pta3x873YPJPoITK-qYvZjbd5YIw8Oexbr73AnfVU6zVWfs2RSiW3FMRkQQBwL4KtZ3nMBOhHCvjFnZvKX9a4GQ5-ajB5d-7zNE/s1672/1000156947.jpg",
-                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRQd7s262bN0-tssDbwj67mVP7ktp2boaK7Rw1RccsPTO_LBYnYG4OKrYPFkoJ8CDGnR8khByIKY_9kO9UGC49TY_4TxVDtW1E91ydStPrOMpfuVm6IvQIk7jXnzuRXDMAiPwKRDv-G1jPUvK18QVCa7UUmZ76WOqTcqVNbxEHRYYrHtf8D5HwtSFg2ec/s1672/1000156949.jpg",
-                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_fQ5LoWDjhozZVhMorjk6jO-yrkLv0OBvGk4g4ED3KG_75dHK-Q2s-z-PxfFY11Flfv-QCbdQSUpLbSklvj-B7ZRVzgrhO-PeeBTK-x9IzGMVBEdJkpEPXKKhcliytUD_uMgUzFXCZA-BnyncBcVOVKgETKY1t5RSpzhO_1xL-eSG5cslGI0bz4cXEqw/s1672/1000156950.jpg",
-                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtuvQaAcMElw6D0QRNUUCMN3QmUkOZMd5s9ZA1QOqSu-YUsgmoI2FKBTMl64PzwshZUIkwkhbS7hIiS677WJJsgxPB0JVjViQsGhzSjn4RNH6HqgrUGKy2CYmhLbQb1mFiYa5cbQjSjA8eJ3effGBPzbQz5qGjMv_OPviFpAuCR8iP99rHHnGQQ8B4YjE/s1671/1000156958.jpg"
+                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNexl71vi4jMR1wn5KHRwcr2EkIKd180RNXpvj-iGbBQFlsVtuFkkGwUp5ctXwXTX9pHJQ1F2cJi0jwSGTGmTHt_U3Pta3x873YPJPoITK-qYvZjbd5YIw8Oexbr73AnfVU6zVWfs2RSiW3FMRkQQBwL4KtZ3nMBOhHCvjFnZvKX9a4GQ5-ajB5d-7zNE/s1672/1000156947.jpg"
                 ],
                 pengertian: "Arsitektur penempatan letak mesin (Engine Location) dan roda penyalur gaya dorong utama (Drive Wheels) pada sasis kendaraan.",
                 fungsi: "Memaksimalkan distribusi berat bodi, traksi roda saat berakselerasi/tanjakan, efisiensi konsumsi BBM, serta kestabilan pengendalian (handling).",
@@ -584,7 +588,6 @@
                 iconClass: "fa-solid fa-truck-pickup",
                 realImgs: [
                     "https://media.licdn.com/dms/image/v2/D5612AQHwYxv7LOYBNA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1730055753925?e=2147483647&v=beta&t=ae_KchopsPLFXAQBwvmzYGIJohG_dp0JuVZAIwpgm44",
-                    "https://torqueking.com/cdn/shop/articles/pxl-20221216-175916951_dd8ea7a1-e148-47ec-a2bd-08cd670c8cdd.jpg?v=1787262201&width=1920",
                     "https://upload.wikimedia.org/wikipedia/commons/9/9e/NP231PTmSOTF.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
                 ],
                 pengertian: "Kotak roda gigi tambahan yang terpasang di belakang transmisi utama pada kendaraan 4WD/AWD, berisi Rantai Penggerak (Drive Chain), Garpu Pemindah (Shift Fork), dan Roda Gigi Reduksi Ekstra (Low Range Gear).",
@@ -605,8 +608,7 @@
                 iconClass: "fa-solid fa-motorcycle",
                 realImgs: [
                     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb7TW88Frdw8oZHevFvFW1SV6U7WUcZxMoP61eQjfHVcU1UmsI9iREbr557wnB_Mv3hJ5zdEuvitfy0bPcNbok_KdNS5gnLlbqMLah9BhA3DcSfVQaBNC6VPX0uBmEFnSyh_hj50K3_2tYbAUcyRjcmIHac7FyN4yyvsTqJOWSD_K0Pg0zqKcx5ADLwwE/s1600-rw/1000156962.jpg",
-                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUaTHvPQd8JspoB124A3WiYMB9g_kmcwn-Cxx8o-1yimpH9Z7iR1rUng-N4Qr3dmwy0heL1dtcP9lfFyVN1XF54NnQhg7dckd93gs_lmJSPQbehqPWHB-MkqpoZktmg5UZ8BJc6HxU__O9BWhUw25w21mb6nnQGL5e2OeozfnaKocd46GQU4VFGpoHbuM/s1600-rw/1000156964.jpg",
-                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggyk7OJbfl_z8CJe-1PWTFhZ0gWY_woGq-TTTQ2EFiTXyhzvP5-ofDLWR9MTy7ewSC6w4otUmuBLVa7MBTBKvlxurAKhu7KgGmqLgl8Z0mFBd_PbqhB9M1s3UlKbRzEIMyVJ0GAmL2ROQdt-_G_eUV_OHQL_BLjbF8aTBS2AGAa2gv9dWiXoP-WhjqEG4/s1600-rw/1000156963.jpg"
+                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUaTHvPQd8JspoB124A3WiYMB9g_kmcwn-Cxx8o-1yimpH9Z7iR1rUng-N4Qr3dmwy0heL1dtcP9lfFyVN1XF54NnQhg7dckd93gs_lmJSPQbehqPWHB-MkqpoZktmg5UZ8BJc6HxU__O9BWhUw25w21mb6nnQGL5e2OeozfnaKocd46GQU4VFGpoHbuM/s1600-rw/1000156964.jpg"
                 ],
                 pengertian: "Sistem transmisi variabel kontinyu pada sepeda motor matic yang terdiri dari Puli Utama (Primary Pulley & Weight Roller), Sabuk V-Belt, Puli Sekunder (Secondary Pulley & Compression Spring), dan Kopling Sentrifugal Ganda.",
                 fungsi: "Merubah rasio putaran secara bertahap tanpa tingkatan gigi serta memutus/menghubungkan putaran ke roda belakang secara otomatis berdasarkan gaya sentrifugal putaran mesin.",
@@ -626,8 +628,7 @@
                 iconClass: "fa-solid fa-link",
                 realImgs: [
                     "https://www.fortuna-motor.co.id/wp-content/uploads/2020/06/sistem-penggerak-roda-motor-dari-rantai-e1592013608308.jpg",
-                    "https://www.hondacengkareng.com/wp-content/uploads/2016/01/Rantai-Kendor-1.jpg",
-                    "https://astraotoshop.com/asset/article-aop/peran-gir-motor%20(1)_20240205.webp"
+                    "https://www.hondacengkareng.com/wp-content/uploads/2016/01/Rantai-Kendor-1.jpg"
                 ],
                 pengertian: "Rangkaian transmisi daya terbuka sepeda motor manual yang terdiri dari Sproket Penggerak Depan (Drive Sprocket), Rantai Rol Baja (Roller Chain), dan Sproket Tergerak Belakang (Driven Sprocket).",
                 fungsi: "Meneruskan putaran akhir dari poros output transmisi manual menuju roda belakang sepeda motor.",
@@ -651,34 +652,19 @@
         const quizQuestions = [
             {
                 q: "1. Komponen pemindah tenaga yang berfungsi untuk memutus dan menghubungkan putaran mesin ke transmisi secara halus adalah...",
-                options: [
-                    "Poros Propeller",
-                    "Kopling (Clutch)",
-                    "Differensial (Gardan)",
-                    "Poros Axle"
-                ],
+                options: ["Poros Propeller", "Kopling (Clutch)", "Differensial (Gardan)", "Poros Axle"],
                 answer: 1,
                 explain: "Kopling dipasang di antara flywheel mesin dan input transmisi untuk memutus/menghubungkan alur tenaga saat perpindahan gigi atau mobil mulai berjalan."
             },
             {
                 q: "2. Komponen kopling gesek yang langsung bertumpu dan terjepit di antara roda gila (flywheel) dan plat penekan (pressure plate) adalah...",
-                options: [
-                    "Release Bearing",
-                    "Diaphragm Spring",
-                    "Plat Kopling (Clutch Disc)",
-                    "Master Cylinder"
-                ],
+                options: ["Release Bearing", "Diaphragm Spring", "Plat Kopling (Clutch Disc)", "Master Cylinder"],
                 answer: 2,
                 explain: "Plat kopling (clutch disc) dilapisi kanvas gesek dan peredam puntir (torsion damper) yang terjepit rapat di antara flywheel dan pressure plate."
             },
             {
                 q: "3. Komponen transmisi manual yang berfungsi menyamakan kecepatan putar antara roda gigi yang akan dihubungkan dinamakan...",
-                options: [
-                    "Synchromesh Ring",
-                    "Shift Fork",
-                    "Input Shaft",
-                    "Counter Gear"
-                ],
+                options: ["Synchromesh Ring", "Shift Fork", "Input Shaft", "Counter Gear"],
                 answer: 0,
                 explain: "Synchromesh ring memanfaatkan gesekan kerucut untuk menyamakan putaran roda gigi bebas dengan poros sebelum dog clutch terkunci pas tanpa menggeretak."
             },
@@ -695,45 +681,25 @@
             },
             {
                 q: "5. Komponen pemindah tenaga yang berfungsi mengubah momen torsi, rasio kecepatan, serta arah putaran kendaraan adalah...",
-                options: [
-                    "Kopling",
-                    "Transmisi",
-                    "Poros Propeller",
-                    "Flywheel"
-                ],
+                options: ["Kopling", "Transmisi", "Poros Propeller", "Flywheel"],
                 answer: 1,
                 explain: "Transmisi berisi susunan perbandingan roda gigi (gear ratio) untuk menghasilkan momen tinggi saat awal jalan/tanjakan dan kecepatan tinggi di jalan datar."
             },
             {
                 q: "6. Pada kendaraan penggerak roda belakang (FR), komponen yang menyalurkan putaran dari output transmisi menuju gardan belakang adalah...",
-                options: [
-                    "CV Joint",
-                    "Poros Propeller (Propeller Shaft)",
-                    "Drive Shaft Depan",
-                    "Steering Shaft"
-                ],
+                options: ["CV Joint", "Poros Propeller (Propeller Shaft)", "Drive Shaft Depan", "Steering Shaft"],
                 answer: 1,
                 explain: "Poros Propeller bertugas menyeberangkan putaran jarak jauh dari transmisi di depan menuju differensial di poros belakang."
             },
             {
                 q: "7. Komponen pada poros propeller yang berfungsi menyerap perubahan sudut akibat goncangan naik-turun pegas suspensi adalah...",
-                options: [
-                    "Slip Joint",
-                    "Universal Joint (U-Joint)",
-                    "Center Bearing",
-                    "Flange Coupling"
-                ],
+                options: ["Slip Joint", "Universal Joint (U-Joint)", "Center Bearing", "Flange Coupling"],
                 answer: 1,
                 explain: "Universal Joint (salib engsel / cardan joint) memungkinkan fleksibilitas poros dalam meneruskan putaran saat sudut kemiringan gardan berubah-ubah."
             },
             {
                 q: "8. Bagian dari poros propeller yang berfungsi menyerap perubahan jarak (panjang-pendek) antara transmisi dan gardan adalah...",
-                options: [
-                    "Slip Joint",
-                    "Hooke Joint",
-                    "Drive Pinion",
-                    "Spider Gear"
-                ],
+                options: ["Slip Joint", "Hooke Joint", "Drive Pinion", "Spider Gear"],
                 answer: 0,
                 explain: "Slip joint memiliki alur luar-dalam (spline) yang dapat bergeser maju-mundur menyerap naik-turun aksel belakang."
             },
@@ -750,111 +716,61 @@
             },
             {
                 q: "10. Roda gigi pada differensial yang bertugas meneruskan pemutaran dari drive pinion menuju rumah differensial (differential case) adalah...",
-                options: [
-                    "Side Gear",
-                    "Spider Gear (Pinion Differential)",
-                    "Ring Gear (Crown Gear)",
-                    "Sun Gear"
-                ],
+                options: ["Side Gear", "Spider Gear (Pinion Differential)", "Ring Gear (Crown Gear)", "Sun Gear"],
                 answer: 2,
                 explain: "Drive pinion memutar Ring Gear (gigi mahkota) yang terbaut pada rumah differensial untuk mereduksi putaran dan meningkatkan torsi final."
             },
             {
                 q: "11. Roda gigi kecil di dalam rumah differensial yang terhubung langsung dengan poros roda (axle shaft) kanan dan kiri dinamakan...",
-                options: [
-                    "Ring Gear",
-                    "Side Gear",
-                    "Drive Pinion",
-                    "Planet Gear"
-                ],
+                options: ["Ring Gear", "Side Gear", "Drive Pinion", "Planet Gear"],
                 answer: 1,
                 explain: "Side gear terpasang di bagian dalam differensial case dan terhubung lewat alur spline ke poros penggerak roda (axle shaft)."
             },
             {
                 q: "12. Tipe penggerak kendaraan di mana mesin terletak di depan dan menggerakkan roda depan dinamakan tipe...",
-                options: [
-                    "FR (Front Engine Rear Drive)",
-                    "FF (Front Engine Front Drive)",
-                    "MR (Midship Engine Rear Drive)",
-                    "RR (Rear Engine Rear Drive)"
-                ],
+                options: ["FR (Front Engine Rear Drive)", "FF (Front Engine Front Drive)", "MR (Midship Engine Rear Drive)", "RR (Rear Engine Rear Drive)"],
                 answer: 1,
                 explain: "FF (Front Engine Front Drive) menempatkan mesin dan transmisi (transaxle) di depan untuk langsung menggerakkan roda depan."
             },
             {
                 q: "13. Komponen pemindah tenaga pada mobil penggerak FF yang berfungsi meneruskan putaran ke roda pada sudut belok kemudi yang ekstrem adalah...",
-                options: [
-                    "Universal Joint standar",
-                    "CV Joint (Constant Velocity Joint)",
-                    "Rigid Axle",
-                    "Flywheel"
-                ],
+                options: ["Universal Joint standar", "CV Joint (Constant Velocity Joint)", "Rigid Axle", "Flywheel"],
                 answer: 1,
                 explain: "CV Joint dapat meneruskan putaran secara konstan dan halus tanpa getaran meskipun roda depan berbelok tajam dan bergerak naik-turun."
             },
             {
                 q: "14. Alat hidrolik pengganti kopling mekanis pada transmisi otomatis yang mentransfer tenaga mesin menggunakan tekanan cairan oli adalah...",
-                options: [
-                    "Torque Converter",
-                    "Manual Gearbox",
-                    "Synchronizer Ring",
-                    "Clutch Release Fork"
-                ],
+                options: ["Torque Converter", "Manual Gearbox", "Synchronizer Ring", "Clutch Release Fork"],
                 answer: 0,
                 explain: "Torque Converter memanfaatkan fluida ATF yang disemprotkan oleh Impeller (terhubung mesin) untuk memutar Turbine (terhubung transmisi)."
             },
             {
                 q: "15. Komponen transmisi otomatis berupa susunan roda gigi pusat (sun gear), roda gigi planet, dan roda gigi cincin (ring gear) disebut...",
-                options: [
-                    "Planetary Gear Set",
-                    "Helical Gear Set",
-                    "Spur Gear Set",
-                    "Bevel Gear Set"
-                ],
+                options: ["Planetary Gear Set", "Helical Gear Set", "Spur Gear Set", "Bevel Gear Set"],
                 answer: 0,
                 explain: "Planetary gear set adalah jantung transmisi otomatis konvensional untuk mendapatkan variasi rasio gigi dengan menahan/memutar elemennya."
             },
             {
                 q: "16. Jenis cairan oli yang wajib digunakan untuk melumasi dan mengoperasikan transmisi otomatis adalah...",
-                options: [
-                    "Oli Mesin SAE 10W-40",
-                    "Oli Gardan SAE 90 GL-5",
-                    "ATF (Automatic Transmission Fluid)",
-                    "Minyak Rem DOT 4"
-                ],
+                options: ["Oli Mesin SAE 10W-40", "Oli Gardan SAE 90 GL-5", "ATF (Automatic Transmission Fluid)", "Minyak Rem DOT 4"],
                 answer: 2,
                 explain: "ATF (Automatic Transmission Fluid) dirancang khusus memiliki gesekan dan viskositas stabil untuk sistem hidrolik transmisi otomatis."
             },
             {
                 q: "17. Komponen tambahan pada mobil 4WD yang berfungsi membagi putaran dari transmisi ke poros depan dan belakang adalah...",
-                options: [
-                    "Transfer Case",
-                    "Master Cylinder",
-                    "Flywheel",
-                    "Governor Valve"
-                ],
+                options: ["Transfer Case", "Master Cylinder", "Flywheel", "Governor Valve"],
                 answer: 0,
                 explain: "Transfer Case membagi tenaga mesin ke poros penggerak roda depan dan belakang serta memiliki pilihan mode 2H, 4H, dan 4L."
             },
             {
                 q: "18. Sistem pemindah tenaga sepeda motor matic (CVT) memanfaatkan komponen penyalur tenaga fleksibel berupa...",
-                options: [
-                    "Rantai rol baja",
-                    "Sabuk V-Belt sintetis",
-                    "Batang kopel pejal",
-                    "Kawat seling"
-                ],
+                options: ["Rantai rol baja", "Sabuk V-Belt sintetis", "Batang kopel pejal", "Kawat seling"],
                 answer: 1,
                 explain: "CVT sepeda motor menggunakan V-Belt khusus yang bergerak naik-turun pada puli variabel depan dan belakang."
             },
             {
                 q: "19. Kopling pada sepeda motor matic yang bekerja otomatis berdasarkan besarnya gaya lemparan putaran mesin dinamakan...",
-                options: [
-                    "Kopling Manual Diaphragm",
-                    "Kopling Sentrifugal",
-                    "Kopling Hidrolik",
-                    "Kopling Magnetik"
-                ],
+                options: ["Kopling Manual Diaphragm", "Kopling Sentrifugal", "Kopling Hidrolik", "Kopling Magnetik"],
                 answer: 1,
                 explain: "Kopling sentrifugal mengembang dan menempel pada rumah mangkok kopling akibat gaya sentrifugal saat RPM mesin dinaikkan."
             },
@@ -889,6 +805,7 @@
         let isExamActive = false;
         let isExamSubmitted = false;
         let violationCount = 0;
+        let isJustResetToken = false; // Flag penanda jika baru saja di-reset via token
         const MAX_VIOLATIONS = 3;
         
         // PIN DEFAULTS
@@ -990,6 +907,7 @@
                     isExamSubmitted = cache.isExamSubmitted || false;
                     violationCount = cache.violationCount || 0;
                     isQuizUnlocked = cache.isQuizUnlocked || false;
+                    isJustResetToken = cache.isJustResetToken || false;
                     userAnswers = cache.userAnswers || new Array(quizQuestions.length).fill(null);
                     activeShuffledQuestions = cache.shuffledQuestions || generateShuffledQuestions();
                 } catch(e) {
@@ -997,6 +915,13 @@
                 }
             } else {
                 activeShuffledQuestions = generateShuffledQuestions();
+            }
+
+            // Jika baru saja di-reset via token, bersihkan penanda dan pastikan pelanggaran tetap 0
+            if (isJustResetToken) {
+                isJustResetToken = false;
+                violationCount = 0;
+                saveQuizToCache();
             }
 
             document.getElementById('student-name').value = studentName;
@@ -1015,7 +940,8 @@
                 restoreSubmittedQuizUI();
             } else {
                 restoreActiveAnswersUI();
-                if ((studentName || userAnswers.some(a => a !== null)) && isQuizUnlocked) {
+                // PAKSA FULLSCREEN PAKSA SETELAH REFRESH
+                if (isQuizUnlocked) {
                     isExamActive = true;
                     showFullscreenLockModal();
                 }
@@ -1028,6 +954,7 @@
                 isExamSubmitted: isExamSubmitted,
                 violationCount: violationCount,
                 isQuizUnlocked: isQuizUnlocked,
+                isJustResetToken: isJustResetToken,
                 userAnswers: userAnswers,
                 shuffledQuestions: activeShuffledQuestions
             };
@@ -1081,27 +1008,31 @@
                 return;
             }
 
-            if (!studentName && !isExamSubmitted) {
-                switchTab('kuis');
-                document.getElementById('student-name').focus();
-                showSecurityToast("Masukkan Nama Lengkap Anda (XI-TKR) terlebih dahulu.");
-                return;
-            }
-
             if (isExamSubmitted) {
                 switchTab('kuis');
                 return;
             }
 
-            enterFullscreenMode();
-            isExamActive = true;
             switchTab('kuis');
+            isExamActive = true;
+            enterFullscreenMode();
+
+            // Pengecekan gesture fullscreen otomatis
+            setTimeout(() => {
+                if (!document.fullscreenElement && !isExamSubmitted) {
+                    showFullscreenLockModal();
+                }
+            }, 300);
         }
 
         function enterFullscreenMode() {
             const docEl = document.documentElement;
             if (docEl.requestFullscreen) {
-                docEl.requestFullscreen().catch(() => {});
+                docEl.requestFullscreen().catch(() => {
+                    if (isExamActive && !isExamSubmitted) {
+                        showFullscreenLockModal();
+                    }
+                });
             }
         }
 
@@ -1181,6 +1112,13 @@
 
         function registerViolation(reason) {
             if (isExamSubmitted || !isExamActive) return;
+
+            // Abaikan pelanggaran jika baru saja di-reset via token saat halaman dimuat
+            if (isJustResetToken) {
+                isJustResetToken = false;
+                saveQuizToCache();
+                return;
+            }
 
             violationCount++;
             if (violationCount > MAX_VIOLATIONS) violationCount = MAX_VIOLATIONS;
@@ -1530,9 +1468,11 @@
                 const qBox = document.createElement('div');
                 qBox.className = "bg-brand-card rounded-2xl border border-slate-800 p-5 sm:p-6 shadow-lg space-y-4";
                 
+                const isChecked = userAnswers[index];
+
                 let optionsHTML = item.options.map((opt, optIdx) => `
                     <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-slate-700 cursor-pointer transition-all hover:bg-slate-900 group">
-                        <input type="radio" name="question-${index}" value="${optIdx}" onchange="selectAnswer(${index}, ${optIdx})" class="quiz-radio w-4 h-4 text-brand-orange bg-slate-800 border-slate-700 focus:ring-brand-orange focus:ring-offset-slate-900">
+                        <input type="radio" name="question-${index}" value="${optIdx}" ${isChecked === optIdx ? 'checked' : ''} ${isExamSubmitted ? 'disabled' : ''} onchange="selectAnswer(${index}, ${optIdx})" class="quiz-radio w-4 h-4 text-brand-orange bg-slate-800 border-slate-700 focus:ring-brand-orange focus:ring-offset-slate-900">
                         <span class="text-xs sm:text-sm text-slate-300 group-hover:text-white transition-colors">${opt}</span>
                     </label>
                 `).join('');
@@ -1648,13 +1588,33 @@
             const pinInput = document.getElementById('input-teacher-pin').value.trim();
             if (pinInput === TEACHER_PIN || pinInput === ACCESS_PIN) {
                 closeSecurityModal();
-                performFullQuizReset();
-                showSecurityToast("Reset Token Berhasil! Kuis dapat dikerjakan kembali.");
+                if (isExamSubmitted) {
+                    performFullQuizReset();
+                    showSecurityToast("Reset Kuis Berhasil! Kuis dapat dikerjakan ulang dari awal.");
+                } else {
+                    unlockViolationKeepProgress();
+                    showSecurityToast("Reset Pelanggaran Berhasil! Kuis dapat dilanjutkan kembali.");
+                }
             } else {
                 document.getElementById('pin-error-msg').classList.remove('hidden');
             }
         }
 
+        /* RESET 1: HANYA HAPUS PELANGGARAN TANPA MENGHAPUS JAWABAN */
+        function unlockViolationKeepProgress() {
+            violationCount = 0;
+            isExamSubmitted = false;
+            isExamActive = true;
+            isQuizUnlocked = true;
+            isJustResetToken = true; // Tandai agar refresh otomatis tidak dihitung sebagai pelanggaran
+
+            saveQuizToCache();
+            
+            // Refresh halaman otomatis setelah reset pelanggaran
+            location.reload();
+        }
+
+        /* RESET 2: RESET TOTAL KUIS DARI AWAL (UNTUK USER YANG SUDAH SUBMIT ATAU INGIN ULANG) */
         function performFullQuizReset() {
             localStorage.removeItem(CACHE_KEY);
             
@@ -1664,39 +1624,12 @@
             isExamActive = true;
             isQuizUnlocked = true;
             violationCount = 0;
-            activeShuffledQuestions = generateShuffledQuestions();
-
-            document.getElementById('student-name').value = '';
-            document.getElementById('student-name').disabled = false;
-            document.getElementById('display-student-name').innerText = '-';
-            document.getElementById('quiz-form').reset();
-            document.getElementById('stat-answered').innerText = '0/20';
-            document.getElementById('stat-score').innerText = '-';
-            document.getElementById('violation-count').innerText = `0 / ${MAX_VIOLATIONS}`;
-            document.getElementById('quiz-status-msg').innerText = 'Silakan jawab seluruh 20 pertanyaan.';
-
-            document.getElementById('submit-chance-badge').className = "text-emerald-400 font-bold";
-            document.getElementById('submit-chance-badge').innerText = "1/1 Masih Ada";
-
-            const submitBtn = document.getElementById('btn-submit-quiz');
-            submitBtn.disabled = false;
-            submitBtn.className = "flex-1 sm:flex-none px-8 py-3 rounded-xl bg-gradient-to-r from-brand-red to-brand-orange hover:from-red-600 hover:to-orange-600 text-white font-bold text-sm transition-all shadow-lg shadow-brand-red/20";
-            submitBtn.innerHTML = `<i class="fa-solid fa-paper-plane mr-2"></i>Kirim & Lihat Hasil (Sekali Klik)`;
-
-            renderQuizQuestions();
-            updateQuizAccessUI();
-
-            activeShuffledQuestions.forEach((_, index) => {
-                const feedbackEl = document.getElementById(`feedback-${index}`);
-                if (feedbackEl) {
-                    feedbackEl.className = "hidden p-3 rounded-xl text-xs leading-relaxed border mt-2";
-                    feedbackEl.innerHTML = "";
-                }
-            });
+            isJustResetToken = true; // Tandai agar refresh otomatis tidak dihitung sebagai pelanggaran
 
             saveQuizToCache();
-            enterFullscreenMode();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Refresh halaman otomatis setelah reset total kuis
+            location.reload();
         }
     </script>
 
